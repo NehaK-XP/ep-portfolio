@@ -1,0 +1,97 @@
+@media (max-width:800px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: lightcoral;
+    margin: 0;
+    height: 100%;
+  }
+  
+  html {
+    height: 100%;
+  }
+
+  .header {
+    
+    display: flexbox;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin:0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height:60px;
+  }
+
+  .header-text {
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 15px;
+
+  }
+
+  .container {
+    display: grid;
+    grid-template-rows: 60px 200px 3fr 60px 60px 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      'header header'
+      'pfp-div pfp-div'
+      'info info'
+      'line line'
+      'email email'
+      'phone phone'
+    ;
+    height: 1000px;
+    gap: 0;
+    justify-content: space-evenly;
+    align-items: center;
+  
+  }
+
+  .pfp-div {
+    margin-top: 15px;
+    height: 100%;
+    width: 90%;
+    justify-self: center;
+    border: 2px solid rgb(40, 22, 22);
+    border-radius: 25px;
+    box-shadow: 8px 8px rgb(40, 22, 22);
+    transition: 0.3s ease-in-out;
+  }
+
+  .pfp-div:hover {
+    box-shadow: 5px 5px;
+  }
+
+  .pfp {
+    margin: 0;
+    height: 90%;
+    border-radius: 10px;
+    object-fit: contain;
+  }
+
+  .info {
+    margin-top: 25px;
+    justify-self: center;
+    align-self: self-start;
+    border-radius: 25px;
+  }
+
+  .list {
+    font-size: large;
+  }
+
+  .para {
+    font-size: large;
+  }
+
+ .phone {
+  align-self: start;
+ }
+}
