@@ -143,6 +143,7 @@ html {
 
 .list {
   margin: 0;
+  margin-left: 15px;
   display: inline;
   text-align: left;
   padding: 0;
